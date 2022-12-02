@@ -3,7 +3,7 @@ import "./App.css";
 import axios from "axios";
 
 function App() {
-  const OPEN_WEATHER_API_KEY = "edfd0c6444083e361354305a8c76b498";
+  const OPEN_WEATHER_API_KEY = process.env.REACT_APP_APIKEY;
   const COUNTRY_URL = `http://api.openweathermap.org/geo/1.0/direct`;
   const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather`;
 
